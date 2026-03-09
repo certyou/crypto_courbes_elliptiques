@@ -79,17 +79,17 @@ static inline void curve_set_str(ECCurve *E, const char *p_str, const char *a_st
 }
 
 static int valid_elliptic_curve(const ECCurve *E) {
-    mpz_t t1, t2, s;
-    mpz_inits(t1, t2, s, NULL);
-    mpz_powm_ui(t1, E->a, 3, E->p);
-    mpz_mul_ui(t1, t1, 4);
-    modp(t1, t1, E->p);
-    mpz_powm_ui(t2, E->b, 2, E->p);
-    mpz_mul_ui(t2, t2, 27);
-    modp(t2, t2, E->p);
-    mpz_add(s, t1, t2);
-    modp(s, s, E->p);
-    int valid = (mpz_cmp_ui(s, 0) != 0);
+    mpz_t t1, t2, s; // discriminant = 4 a^3 + 27 b^2
+    mpz_inits(t1, t2, s, NULL); // t1 = 4 a^3, t2 = 27 b^2, s = t1 + t2
+    mpz_powm_ui(t1, E->a, 3, E->p); // t1 = a^3
+    mpz_mul_ui(t1, t1, 4); // t1 = 4 a^3
+    modp(t1, t1, E->p); // t1 = 4 a^3 mod p
+    mpz_powm_ui(t2, E->b, 2, E->p); // t2 = b^2
+    mpz_mul_ui(t2, t2, 27); // t2 = 27 b^2
+    modp(t2, t2, E->p);// t2 = 27 b^2 mod p
+    mpz_add(s, t1, t2);// s = 4 a^3 + 27 b^2 mod p
+    modp(s, s, E->p); // s = 4 a^3 + 27 b^2 mod p
+    int valid = (mpz_cmp_ui(s, 0) != 0); // la courbe est valide si le discriminant n'est pas nul
     return valid;
 }
 
@@ -138,13 +138,47 @@ static void point_add_distinct(const ECCurve *E, ECPoint *R, const ECPoint *P, c
 
  static void point_double(const ECCurve *E, ECPoint *R, const ECPoint *P) {
 
-     /* Cas particulier : si y == 0 alors le double est le point à l'infini */
-     if (mpz_cmp_ui(P->y, 0) == 0) {
-         point_set_infinity(R);
-         return;
-     }
+    /* Cas particulier : si y == 0 alors le double est le point à l'infini */
+    if (mpz_cmp_ui(P->y, 0) == 0) {
+        point_set_infinity(R);
+        return;
+    }
 
-     // TODO
+    mpz_t s, num, den, den_inv, tmp;
+    mpz_inits(s, num, den, den_inv, tmp, NULL);
+    // Bloc 1 : -------------------------------------
+    mpz_powm_ui(num, P->x, 2, E->p);
+    mpz_mul_ui(num, num, 3);
+    mpz_add(num, num, E->a);
+    modp(num, num, E->p);
+    // ----------------------------------------------
+    // Bloc 2 : -------------------------------------
+    mpz_mul_ui(den, P->y, 2);
+    modp(den, den, E->p);
+    // ----------------------------------------------
+    // Bloc 3 : -------------------------------------
+    mpz_invert(den_inv, den, E->p);
+    mpz_mul(s, num, den_inv);
+    modp(s, s, E->p);
+    // ----------------------------------------------
+    // Bloc 4 : -------------------------------------
+    mpz_mul(tmp, s, s);
+    modp(tmp, tmp, E->p);
+    mpz_mul_ui(num, P->x, 2);
+    mpz_sub(tmp, tmp, num);
+    modp(tmp, tmp, E->p);
+    mpz_set(R->x, tmp);
+    // ----------------------------------------------
+    // Bloc 5 : -------------------------------------
+    mpz_sub(tmp, P->x, R->x);
+    modp(tmp, tmp, E->p);
+    mpz_mul(tmp, s, tmp);
+    modp(tmp, tmp, E->p);
+    mpz_sub(tmp, tmp, P->y);
+    modp(tmp, tmp, E->p);
+    mpz_set(R->y, tmp);
+    R->infinity = 0;
+    // ----------------------------------------------
 
  }
 
