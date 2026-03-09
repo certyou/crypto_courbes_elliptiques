@@ -1,0 +1,349 @@
+Script started on Mon Mar  9 11:49:40 2026
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004hexitscript historique.txt exit[26Dcd ..                     [21Dscript historique.txt [22D./ec_gmp             [13D[8D gcc -o ec_gmp ec_gmp.c -lgmp[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h gcc -o ec_gmp ec_gmp.c -lgmp[29Dexit                         [25Dscript historique.txt exit[26Dcd ..                     [21Dscript historique.txt [22D./ec_gmp             [13D[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 1   0
+^X^C
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 0 0
+Donnez x et y de Q séparés par des espaces : 0 0
+P = (x=0, y=0)
+Q = (x=0, y=0)
+R = P + Q = O (point à l'infini)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 1 4
+Donnez x et y de Q séparés par des espaces : 1 4
+P = (x=1, y=4)
+Q = (x=1, y=4)
+R = P + Q = (x=6, y=1)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 4 2
+Donnez x et y de Q séparés par des espaces : 4 2
+P = (x=4, y=2)
+Q = (x=4, y=2)
+R = P + Q = (x=1, y=3)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5  
+Donnez x et y de P séparés par des espaces : 4 5
+Donnez x et y de Q séparés par des espaces : 4v    5
+P = (x=4, y=5)
+Q = (x=4, y=5)
+R = P + Q = (x=1, y=4)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 7 3 5
+Donnez x et y de P séparés par des espaces : 6 1
+Donnez x et y de Q séparés par des espaces : 6 1
+P = (x=6, y=1)
+Q = (x=6, y=1)
+R = P + Q = (x=4, y=5)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 6 6
+Donnez x et y de Q séparés par des espaces : 6 6
+P = (x=6, y=6)
+Q = (x=6, y=6)
+R = P + Q = (x=4, y=2)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 1 4 4
+Donnez x et y de Q séparés par des espaces : 1 3
+P = (x=1, y=4)
+Q = (x=1, y=3)
+R = P + Q = O (point à l'infini)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 4 2
+1   ^C
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 4 2
+Donnez x et y de Q séparés par des espaces : 1 3
+P = (x=4, y=2)
+Q = (x=1, y=3)
+R = P + Q = (x=6, y=1)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 4 5
+Donnez x et y de Q séparés par des espaces : 1 3
+P = (x=4, y=5)
+Q = (x=1, y=3)
+R = P + Q = (x=4, y=2)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 6 1
+Donnez x et y de Q séparés par des espaces : 1 3
+P = (x=6, y=1)
+Q = (x=1, y=3)
+R = P + Q = (x=1, y=4)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 5 56  § 6 6
+Donnez x et y de Q séparés par des espaces : 1 3
+P = (x=6, y=6)
+Q = (x=1, y=3)
+R = P + Q = (x=4, y=5)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 1 3
+Donnez x et y de Q séparés par des espaces : 1 4
+P = (x=1, y=3)
+Q = (x=1, y=4)
+R = P + Q = O (point à l'infini)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 4 2
+Donnez x et y de Q séparés par des espaces : 1 4
+P = (x=4, y=2)
+Q = (x=1, y=4)
+R = P + Q = (x=4, y=5)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 4 5
+Donnez x et y de Q séparés par des espaces : 1 4
+P = (x=4, y=5)
+Q = (x=1, y=4)
+R = P + Q = (x=6, y=6)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 6 1
+Donnez x et y de Q séparés par des espaces : 1 4
+P = (x=6, y=1)
+Q = (x=1, y=4)
+R = P + Q = (x=4, y=2)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 6 6
+Donnez x et y de Q séparés par des espaces : 1 4
+P = (x=6, y=6)
+Q = (x=1, y=4)
+R = P + Q = (x=1, y=3)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 1 3
+Donnez x et y de Q séparés par des espaces : 4 2
+P = (x=1, y=3)
+Q = (x=4, y=2)
+R = P + Q = (x=6, y=1)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 1 4
+4   ^C
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : ^^?  7 3 5
+Donnez x et y de P séparés par des espaces : 1 4
+Donnez x et y de Q séparés par des espaces : 4 2
+P = (x=1, y=4)
+Q = (x=4, y=2)
+R = P + Q = (x=4, y=5)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 4 5
+Donnez x et y de Q séparés par des espaces : 3 4 2
+P = (x=4, y=5)
+Q = (x=4, y=2)
+R = P + Q = O (point à l'infini)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 6 1
+^C
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 6 1
+Donnez x et y de Q séparés par des espaces : 4 2
+P = (x=6, y=1)
+Q = (x=4, y=2)
+R = P + Q = (x=6, y=6)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 6 6
+Donnez x et y de Q séparés par des espaces : 4 2
+P = (x=6, y=6)
+Q = (x=4, y=2)
+R = P + Q = (x=1, y=4)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 1 4 3
+Donnez x et y de Q séparés par des espaces : 4 T5  5
+P = (x=1, y=3)
+Q = (x=4, y=5)
+R = P + Q = (x=4, y=2)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 1 4
+Donnez x et y de Q séparés par des espaces : 1   4 5
+P = (x=1, y=4)
+Q = (x=4, y=5)
+R = P + Q = (x=6, y=6)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 4 2
+Donnez x et y de Q séparés par des espaces : 4 5
+P = (x=4, y=2)
+Q = (x=4, y=5)
+R = P + Q = O (point à l'infini)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 6 1
+Donnez x et y de Q séparés par des espaces : 4 5
+P = (x=6, y=1)
+Q = (x=4, y=5)
+R = P + Q = (x=1, y=3)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 6 6
+Donnez x et y de Q séparés par des espaces : 4 5
+P = (x=6, y=6)
+Q = (x=4, y=5)
+R = P + Q = (x=6, y=1)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 1 3
+Donnez x et y de Q séparés par des espaces : 6 1
+P = (x=1, y=3)
+Q = (x=6, y=1)
+R = P + Q = (x=1, y=4)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 1 4
+Donnez x et y de Q séparés par des espaces : 6 1
+P = (x=1, y=4)
+Q = (x=6, y=1)
+R = P + Q = (x=4, y=2)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 4 2
+Donnez x et y de Q séparés par des espaces : 6 1
+P = (x=4, y=2)
+Q = (x=6, y=1)
+R = P + Q = (x=6, y=6)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 4 5
+Donnez x et y de Q séparés par des espaces : 6 1
+P = (x=4, y=5)
+Q = (x=6, y=1)
+R = P + Q = (x=1, y=3)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 6 6
+Donnez x et y de Q séparés par des espaces : 6 1
+P = (x=6, y=6)
+Q = (x=6, y=1)
+R = P + Q = O (point à l'infini)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 6 6
+Donnez x et y de Q séparés par des espaces : 1 3
+P = (x=6, y=6)
+Q = (x=1, y=3)
+R = P + Q = (x=4, y=5)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 1 5 4
+Donnez x et y de Q séparés par des espaces : 6 6
+P = (x=1, y=4)
+Q = (x=6, y=6)
+R = P + Q = (x=1, y=3)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 4 2
+Donnez x et y de Q séparés par des espaces : 6 6
+P = (x=4, y=2)
+Q = (x=6, y=6)
+R = P + Q = (x=1, y=4)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 4 5
+Donnez x et y de Q séparés par des espaces : 5   6 6
+P = (x=4, y=5)
+Q = (x=6, y=6)
+R = P + Q = (x=6, y=1)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 6 1
+  ^C
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : ◊
+©^C
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 5 6&  1
+Donnez x et y de Q séparés par des espaces : 6 6
+P = (x=6, y=1)
+Q = (x=6, y=6)
+R = P + Q = O (point à l'infini)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : ^C
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp      .  
+bck-i-search: _[K[A[19C./ec_[4mg[24mmp[1B[28Dg_[A[23C [4mg[4mc[24mc [24m-o ec_gmp ec_gmp.c -lgmp[1B[48Dc_[A[18C[1C[4mc[4mc[24m[1B[22Dc_[A[17C [24mg[24mc[24mc[1B[K[A[35C[?2004l[1B[1mec_gmp.c:266:23: [0m[0;1;35mwarning: [0m[1mordered comparison between pointer and integer ('int' and '__mpz_struct *')[0m
+  266 |     [0;34mfor[0m ([0;34mint[0m i = [0;32m0[0m; i < k; i++) {[0m
+      | [0;1;32m                    ~ ^ ~
+[0m1 warning generated.
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h gcc -o ec_gmp ec_gmp.c -lgmp[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h gcc -o ec_gmp ec_gmp.c -lgmp[29D./ec_gmp                     [21D[?2004l
+Donnez p a b (séparés par des espaces) :     mpz_t x, y;
+zsh: floating point exception  ./ec_gmp
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 3 3
+Donnez x et y de Q séparés par des espaces : 3 3
+P = (x=3, y=3)
+Q = (x=3, y=3)
+R = P + Q = (x=5, y=1)
+Donnez x et y de P séparés par des espaces et le mult k: 1 4 3
+zsh: segmentation fault  ./ec_gmp
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez x et y de P séparés par des espaces : 1 4 2 3
+Donnez x et y de Q séparés par des espaces : 1 4 "
+P = (x=1, y=4)
+Q = (x=3, y=1)
+R = P + Q = (x=0, y=5)
+Donnez x et y de P séparés par des espaces et le mult k: R = kP = O (point à l'infini)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[8D gcc -o ec_gmp ec_gmp.c -lgmp[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h gcc -o ec_gmp ec_gmp.c -lgmp[29D./ec_gmp                     [21D[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+Donnez u et v de S séparés par des espaces et le mult k: 1 4 3
+zsh: bus error  ./ec_gmp
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[8D gcc -o ec_gmp ec_gmp.c -lgmp[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h gcc -o ec_gmp ec_gmp.c -lgmp[29D                             [29D gcc -o ec_gmp ec_gmp.c -lgmp[29D./ec_gmp                     [21D[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+zsh: segmentation fault  ./ec_gmp
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[8D gcc -o ec_gmp ec_gmp.c -lgmp[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h gcc -o ec_gmp ec_gmp.c -lgmp[29D                             [29D gcc -o ec_gmp ec_gmp.c -lgmp[29D./ec_gmp                     [21D[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+zsh: segmentation fault  ./ec_gmp
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[8D gcc -o ec_gmp ec_gmp.c -lgmp[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h gcc -o ec_gmp ec_gmp.c -lgmp[29D./ec_gmp                     [21D[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+zsh: segmentation fault  ./ec_gmp
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[8D gcc -o ec_gmp ec_gmp.c -lgmp[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h gcc -o ec_gmp ec_gmp.c -lgmp[29D./ec_gmp                     [21D[8D gcc -o ec_gmp ec_gmp.c -lgmp[29D./ec_gmp                     [21D[?2004l
+Donnez p a b (séparés par des espaces) : 7 3 5
+zsh: segmentation fault  ./ec_gmp
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[8D gcc -o ec_gmp ec_gmp.c -lgmp[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h gcc -o ec_gmp ec_gmp.c -lgmp[29D./ec_gmp                     [21D[?2004l
+Curve (p a b): 7 3 5
+Point P (x y) and multiplier k: 1 4
+3 ^C
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Curve (p a b): 7 3 5
+Point P (x y) and multiplier k: 1 4 3
+Result kP: (2, 4)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[?2004l
+Curve (p a b): 7 3 5
+Point P (x y) and multiplier k: 1 4 5
+Result kP: (6, 4)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[8D gcc -o ec_gmp ec_gmp.c -lgmp[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h gcc -o ec_gmp ec_gmp.c -lgmp[29D./ec_gmp                     [21D[?2004l
+Curve (p a b): 7 3 5
+Point P (x y) and multiplier k: 1 4 3
+Result kP: (2, 4)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h./ec_gmp[8D gcc -o ec_gmp ec_gmp.c -lgmp[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h gcc -o ec_gmp ec_gmp.c -lgmp[29D./ec_gmp                     [21D[?2004l
+Curve (p a b): 7 3 5
+multiplier k: 3
+Point P (x y): 1 4
+Result kP: (2, 4)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                             [0m[27m[24m[Jewen@MacBook-Air-de-Ewen ec_gmp % [K[?2004h

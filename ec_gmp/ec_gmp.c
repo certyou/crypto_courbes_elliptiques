@@ -79,8 +79,8 @@ static inline void curve_set_str(ECCurve *E, const char *p_str, const char *a_st
 }
 
 static int valid_elliptic_curve(const ECCurve *E) {
-    mpz_t t1, t2, s; // discriminant = 4 a^3 + 27 b^2
-    mpz_inits(t1, t2, s, NULL); // t1 = 4 a^3, t2 = 27 b^2, s = t1 + t2
+    mpz_t t1, t2, s; // declaration de variables temporaires
+    mpz_inits(t1, t2, s, NULL); // initialisation des variables temporaires
     mpz_powm_ui(t1, E->a, 3, E->p); // t1 = a^3
     mpz_mul_ui(t1, t1, 4); // t1 = 4 a^3
     modp(t1, t1, E->p); // t1 = 4 a^3 mod p
@@ -89,7 +89,7 @@ static int valid_elliptic_curve(const ECCurve *E) {
     modp(t2, t2, E->p);// t2 = 27 b^2 mod p
     mpz_add(s, t1, t2);// s = 4 a^3 + 27 b^2 mod p
     modp(s, s, E->p); // s = 4 a^3 + 27 b^2 mod p
-    int valid = (mpz_cmp_ui(s, 0) != 0); // la courbe est valide si le discriminant n'est pas nul
+    int valid = (mpz_cmp_ui(s, 0) != 0); // la courbe est valide si le discriminant est différent de 0
     return valid;
 }
 
@@ -99,55 +99,89 @@ static void point_add_distinct(const ECCurve *E, ECPoint *R, const ECPoint *P, c
     mpz_inits(s, num, den, den_inv, tmp, NULL);
 
     // Bloc 1 : -------------------------------------
-    mpz_sub(num, Q->y, P->y);
-    modp(num, num, E->p);
+    mpz_sub(num, Q->y, P->y); // num = y_Q - y_P
+    modp(num, num, E->p); // num = (y_Q - y_P) mod p
     // ----------------------------------------------
 
     // Bloc 2 : -------------------------------------
-    mpz_sub(den, Q->x, P->x);
-    modp(den, den, E->p);
+    mpz_sub(den, Q->x, P->x); // den = x_Q - x_P
+    modp(den, den, E->p); // den = (x_Q - x_P) mod p
     // ----------------------------------------------
     
     // Bloc 3 : -------------------------------------
-    mpz_invert(den_inv, den, E->p);
-    mpz_mul(s, num, den_inv);
-    modp(s, s, E->p);
+    mpz_invert(den_inv, den, E->p); // den_inv = (x_Q - x_P)^-1 mod p
+    mpz_mul(s, num, den_inv); // s = (y_Q - y_P) * (x_Q - x_P)^-1 mod p
+    modp(s, s, E->p); // s = (y_Q - y_P) * (x_Q - x_P)^-1 mod p
     // ----------------------------------------------
 
     // Bloc 4 : -------------------------------------
-    mpz_mul(tmp, s, s);
-    modp(tmp, tmp, E->p);
-    mpz_sub(tmp, tmp, P->x);
-    mpz_sub(tmp, tmp, Q->x);
-    modp(tmp, tmp, E->p);
-    mpz_set(R->x, tmp);
+    mpz_mul(tmp, s, s); // tmp = s^2
+    modp(tmp, tmp, E->p); // tmp = s^2 mod p
+    mpz_sub(tmp, tmp, P->x); // tmp = s^2 - x_P
+    mpz_sub(tmp, tmp, Q->x); // tmp = s^2 - x_P - x_Q
+    modp(tmp, tmp, E->p); // tmp = (s^2 - x_P - x_Q) mod p
+    mpz_set(R->x, tmp); // R->x = (s^2 - x_P - x_Q) mod p
     // ----------------------------------------------
 
     // Bloc 5 : -------------------------------------
-    mpz_sub(tmp, P->x, R->x);
-    modp(tmp, tmp, E->p);
-    mpz_mul(tmp, s, tmp);
-    modp(tmp, tmp, E->p);
-    mpz_sub(tmp, tmp, P->y);
-    modp(tmp, tmp, E->p);
-    mpz_set(R->y, tmp);
-    R->infinity = 0;
+    mpz_sub(tmp, P->x, R->x); // tmp = x_P - x_R
+    modp(tmp, tmp, E->p); // tmp = (x_P - x_R) mod p
+    mpz_mul(tmp, s, tmp); // tmp = s * (x_P - x_R)
+    modp(tmp, tmp, E->p); // tmp = s * (x_P - x_R) mod p
+    mpz_sub(tmp, tmp, P->y); // tmp = s * (x_P - x_R) - y_P
+    modp(tmp, tmp, E->p); // tmp = (s * (x_P - x_R) - y_P) mod p
+    mpz_set(R->y, tmp); // R->y = (s * (x_P - x_R) - y_P) mod p
+    R->infinity = 0; // R n'est pas le point à l'infini
     // ----------------------------------------------
     
 }
 
- static void point_double(const ECCurve *E, ECPoint *R, const ECPoint *P) {
-
-    /* Cas particulier : si y == 0 alors le double est le point à l'infini */
+static void point_double(const ECCurve *E, ECPoint *R, const ECPoint *P) {
+    /* Cas particulier : si y == 0 alors la tangente est verticale, 
+       le double est le point à l'infini */
     if (mpz_cmp_ui(P->y, 0) == 0) {
         point_set_infinity(R);
         return;
-    } 
+    }
 
+    // Variables temporaires pour les calculs intermédiaires
     mpz_t s, num, den, den_inv, tmp;
     mpz_inits(s, num, den, den_inv, tmp, NULL);
-    
- }
+
+    // Calcul du numérateur de s : num = (3 * x^2 + a) mod p
+    mpz_mul(num, P->x, P->x);
+    mpz_mul_ui(num, num, 3);
+    mpz_add(num, num, E->a);
+    modp(num, num, E->p);
+
+    // Calcul du dénominateur de s : den = (2 * y) mod p
+    mpz_mul_ui(den, P->y, 2);
+    modp(den, den, E->p);
+
+    // Calcul de la pente s : num * den^-1 mod p
+    if (mpz_invert(den_inv, den, E->p) == 0) {
+        // Si l'inverse n'existe pas, on retourne le point à l'infini
+        point_set_infinity(R);
+    } else {
+        mpz_mul(s, num, den_inv);
+        modp(s, s, E->p);
+
+        // Calcul de x_R : (s^2 - 2*x_P) mod p
+        mpz_mul(tmp, s, s);
+        mpz_submul_ui(tmp, P->x, 2);
+        modp(tmp, tmp, E->p);
+        mpz_set(R->x, tmp);
+
+        // Calcul de y_R : (s * (x_P - x_R) - y_P) mod p
+        mpz_sub(tmp, P->x, R->x);
+        mpz_mul(tmp, s, tmp);
+        mpz_sub(tmp, tmp, P->y);
+        modp(tmp, tmp, E->p);
+        mpz_set(R->y, tmp);
+        
+        R->infinity = 0;
+    }
+}
 
 /* ============================================================
  *  Fonction principale d'addition elliptique : R = P + Q
@@ -194,7 +228,41 @@ static void point_add(const ECCurve *E, ECPoint *R, const ECPoint *P, const ECPo
     point_add_distinct(E, R, P, Q);
 }
 
+static void point_mul(const ECCurve *E, ECPoint *R, const int k, const ECPoint *P) {
+    ECPoint res;
+    point_init(&res);
+    
+    int i;
+    for (i = 0; i < k; i++) {
+        point_add(E, &res, &res, P);
+    }
+    point_copy(R, &res);
+}
 
+int main() {
+    ECCurve E;
+    mpz_inits(E.p, E.a, E.b, NULL);
+    
+    printf("Curve (p a b): ");
+    gmp_scanf("%Zd %Zd %Zd", E.p, E.a, E.b);
+
+    ECPoint P, Result;
+    point_init(&P);
+    point_init(&Result);
+    int k;
+    printf("multiplier k: ");
+    scanf("%d", &k);
+
+    printf("Point P (x y): ");
+    gmp_scanf("%Zd %Zd", P.x, P.y);
+    P.infinity = 0;
+    point_mul(&E, &Result, k, &P);
+    gmp_printf("Result kP: (%Zd, %Zd)\n", Result.x, Result.y);
+
+    return 0;
+}
+
+/*
 int main(void) {
     ECCurve E;
     curve_init(&E);
@@ -220,3 +288,4 @@ int main(void) {
     point_print("R = P + Q", &R);
     return 0;
 }
+*/
