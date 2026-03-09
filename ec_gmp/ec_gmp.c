@@ -142,44 +142,11 @@ static void point_add_distinct(const ECCurve *E, ECPoint *R, const ECPoint *P, c
     if (mpz_cmp_ui(P->y, 0) == 0) {
         point_set_infinity(R);
         return;
-    }
+    } 
 
     mpz_t s, num, den, den_inv, tmp;
     mpz_inits(s, num, den, den_inv, tmp, NULL);
-    // Bloc 1 : -------------------------------------
-    mpz_powm_ui(num, P->x, 2, E->p);
-    mpz_mul_ui(num, num, 3);
-    mpz_add(num, num, E->a);
-    modp(num, num, E->p);
-    // ----------------------------------------------
-    // Bloc 2 : -------------------------------------
-    mpz_mul_ui(den, P->y, 2);
-    modp(den, den, E->p);
-    // ----------------------------------------------
-    // Bloc 3 : -------------------------------------
-    mpz_invert(den_inv, den, E->p);
-    mpz_mul(s, num, den_inv);
-    modp(s, s, E->p);
-    // ----------------------------------------------
-    // Bloc 4 : -------------------------------------
-    mpz_mul(tmp, s, s);
-    modp(tmp, tmp, E->p);
-    mpz_mul_ui(num, P->x, 2);
-    mpz_sub(tmp, tmp, num);
-    modp(tmp, tmp, E->p);
-    mpz_set(R->x, tmp);
-    // ----------------------------------------------
-    // Bloc 5 : -------------------------------------
-    mpz_sub(tmp, P->x, R->x);
-    modp(tmp, tmp, E->p);
-    mpz_mul(tmp, s, tmp);
-    modp(tmp, tmp, E->p);
-    mpz_sub(tmp, tmp, P->y);
-    modp(tmp, tmp, E->p);
-    mpz_set(R->y, tmp);
-    R->infinity = 0;
-    // ----------------------------------------------
-
+    
  }
 
 /* ============================================================
